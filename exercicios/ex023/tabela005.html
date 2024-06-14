@@ -21,10 +21,29 @@
             border: 1px solid black;
             padding: 8px;
         }
+        col.cnome {
+         background-color: chartreuse;
+        }
+        col.csexo, col.cidade{
+         background-color: yellow;
+        }
+        /*tudo que for colocado a .cgrupo sera espandido para duas colunas ou mais no span*/
+        col.cgrupo{
+         background-color: red;
+        }
     </style>
 </head>
 <body>
   <table>
+   <colgroup><!--Colgroup é muito valioso para selecionar coluna-->
+      <col class="cnome">
+      <col class="csexo">
+      <col class="cidade">
+      <col class="cprof">
+    <!-- pode ser feito assim 
+    <col class="cgrupo" span="2"> 
+    -->
+   </colgroup>
     <caption>Cadastro</caption>
      <tr>
         <th scope="col">Nome</th>
